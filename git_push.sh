@@ -24,7 +24,7 @@ if [ "$git_repo_id" = "" ]; then
 fi
 
 if [ "$release_note" = "" ]; then
-    release_note="Keycloak API Client for 16.1 Build 1"
+    release_note="Keycloak API Client for 17.0 Build 2"
     echo "[INFO] No command line input provided. Set \$release_note to $release_note"
 fi
 
@@ -55,4 +55,3 @@ git pull origin master
 # Pushes (Forces) the changes in the local repository up to the remote repository
 echo "Git pushing to https://${git_host}/${git_user_id}/${git_repo_id}.git"
 git push origin master 2>&1 | grep -v 'To https'
-

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**realm_clients_get**](ClientsApi.md#realm_clients_get) | **GET** /{realm}/clients | Get clients belonging to the realm   Returns a list of clients belonging to the realm
+[**realm_clients_get**](ClientsApi.md#realm_clients_get) | **GET** /{realm}/clients | Get clients belonging to the realm.
 [**realm_clients_id_client_secret_get**](ClientsApi.md#realm_clients_id_client_secret_get) | **GET** /{realm}/clients/{id}/client-secret | Get the client secret
 [**realm_clients_id_client_secret_post**](ClientsApi.md#realm_clients_id_client_secret_post) | **POST** /{realm}/clients/{id}/client-secret | Generate a new secret for the client
 [**realm_clients_id_default_client_scopes_client_scope_id_delete**](ClientsApi.md#realm_clients_id_default_client_scopes_client_scope_id_delete) | **DELETE** /{realm}/clients/{id}/default-client-scopes/{clientScopeId} | 
@@ -41,7 +41,7 @@ Method | HTTP request | Description
 # **realm_clients_get**
 > [{str: (bool, date, datetime, dict, float, int, list, str, none_type)}] realm_clients_get(realm)
 
-Get clients belonging to the realm   Returns a list of clients belonging to the realm
+Get clients belonging to the realm.
 
 ### Example
 
@@ -82,7 +82,7 @@ with keycloak_api.ApiClient(configuration) as api_client:
 
     # example passing only required values which don't have defaults set
     try:
-        # Get clients belonging to the realm   Returns a list of clients belonging to the realm
+        # Get clients belonging to the realm.
         api_response = api_instance.realm_clients_get(realm)
         pprint(api_response)
     except keycloak_api.ApiException as e:
@@ -91,7 +91,7 @@ with keycloak_api.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     # and optional values
     try:
-        # Get clients belonging to the realm   Returns a list of clients belonging to the realm
+        # Get clients belonging to the realm.
         api_response = api_instance.realm_clients_get(realm, client_id=client_id, first=first, max=max, q=q, search=search, viewable_only=viewable_only)
         pprint(api_response)
     except keycloak_api.ApiException as e:

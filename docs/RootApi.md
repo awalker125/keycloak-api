@@ -4,11 +4,11 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**root_get**](RootApi.md#root_get) | **GET** / | Get themes, social providers, auth providers, and event listeners available on this server
+[**admin_realms_get**](RootApi.md#admin_realms_get) | **GET** /admin/realms | Get themes, social providers, auth providers, and event listeners available on this server
 
 
-# **root_get**
-> ServerInfoRepresentation root_get()
+# **admin_realms_get**
+> ServerInfoRepresentation admin_realms_get()
 
 Get themes, social providers, auth providers, and event listeners available on this server
 
@@ -46,10 +46,10 @@ with keycloak_api.ApiClient(configuration) as api_client:
     # example, this endpoint has no required or optional parameters
     try:
         # Get themes, social providers, auth providers, and event listeners available on this server
-        api_response = api_instance.root_get()
+        api_response = api_instance.admin_realms_get()
         pprint(api_response)
     except keycloak_api.ApiException as e:
-        print("Exception when calling RootApi->root_get: %s\n" % e)
+        print("Exception when calling RootApi->admin_realms_get: %s\n" % e)
 ```
 
 

@@ -1,3 +1,11 @@
+# Deprecated
+
+This repo is generated from the open api spec. The api documentation it has been generated from seems to have too many problems to make this useful.
+
+In the end I abandoned this repo in favour or reverse engineering the calls the webconsole makes. As painful as that sounds it was less troublesome then trying to make this work.
+
+This repo is archived. Maybe this note will save someone trying the same and save them some time.
+
 # keycloak-api
 This is a REST API reference for the Keycloak Admin
 
